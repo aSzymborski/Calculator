@@ -2,4 +2,4 @@
 
 ### Live
 
-https://calculator.szymborskidev.com
+http://calculator.szymborskidev.com
