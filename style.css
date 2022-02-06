@@ -1,0 +1,80 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+}
+.container {
+  width: 50vh;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+.calculator__display {
+  background-color: grey;
+  padding: 0.75rem 1rem;
+  text-align: right;
+  font-size: 50px;
+}
+.calculator__keys {
+  background: rgb(226, 226, 226);
+  display: grid;
+  grid-gap: 2px;
+  grid-template-columns: repeat(4, auto);
+  grid-template-areas:
+    ". . . . "
+    "seven eight nine equal"
+    "four five six equal"
+    "one two three equal"
+    "zero decimal clear equal";
+}
+.calculator__keys > button {
+  font-size: 30px;
+  border: 0;
+}
+.calculator__keys-one {
+  grid-area: one;
+}
+.calculator__keys-two {
+  grid-area: two;
+}
+.calculator__keys-three {
+  grid-area: three;
+}
+.calculator__keys-four {
+  grid-area: four;
+}
+.calculator__keys-five {
+  grid-area: five;
+}
+.calculator__keys-six {
+  grid-area: six;
+}
+.calculator__keys-seven {
+  grid-area: seven;
+}
+.calculator__keys-eight {
+  grid-area: eight;
+}
+.calculator__keys-nine {
+  grid-area: nine;
+}
+.calculator__keys-zero {
+  grid-area: zero;
+}
+.calculator__keys-decimal {
+  grid-area: decimal;
+}
+.calculator__keys-clear {
+  grid-area: clear;
+}
+.calculator__keys-equal {
+  grid-area: equal;
+  background-color: orange;
+}
